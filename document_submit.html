@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit a Document</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+    html {background-color : #FFE4C4}
+    img{
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Submit a Document</h1>
+    <a href="check.html">Check Document</a>
+    <br>
+    <a href="home.html">Home</a>
+    <br>
+    <a href="mine.html">Mine</a>
+    <br>
+    <a href="node_page.html">Node Page</a>
+    <br>
+    <a href="register.html">Register</a>
+    <br>
+    <form action = "http://localhost:5000/sign/new" target="_blank" method = "POST">
+      <p>text:</p>
+      <textarea name="docu_text" rows="4" cols="50"></textarea>
+      <br>
+      <p>private key:</p>
+      <input type = "text" name = 'priv_key'/>
+      <br>
+      <p>public key:</p>
+      <input type = "text" name = 'publ_key'/>
+      <br>
+      <p>recipient:</p>
+      <input type = "text" name = 'recipient'/>
+      <br><br>
+      <input type = "submit" value = "submit">
+    </form>
+    <img src="https://dejpknyizje2n.cloudfront.net/marketplace/products/simple-circle-canada-flag-sticker-1540241117.8888876.png" alt="Flag">
+
+  </body>
+</html>

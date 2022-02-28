@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check Document Authenticity</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+    html {background-color : #FFE4C4}
+    img{
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Check Document Authenticity</h1>
+    <a href="home.html">Home</a>
+    <br>
+    <a href="document_submit.html">Submit a document</a>
+    <br>
+    <a href="mine.html">Mine</a>
+    <br>
+    <a href="node_page.html">Node Page</a>
+    <br>
+    <a href="register.html">Register</a>
+    <br>
+    <form action = "http://localhost:5000/sign/check" target="_blank" method = "POST">
+      <p>text:</p>
+      <textarea name="docu_text" rows="4" cols="50"></textarea>
+      <br>
+      <p>public key doctor:</p>
+      <input type = "text" name = 'publ_key_d'/>
+      <br>
+      <p>Healthcard Number:</p>
+      <input type = "text" name = 'publ_key_r'/>
+      <br>
+      <input type = "submit" value = "submit">
+    </form>
+    <img src="https://dejpknyizje2n.cloudfront.net/marketplace/products/simple-circle-canada-flag-sticker-1540241117.8888876.png" alt="Flag">
+  </body>
+</html>

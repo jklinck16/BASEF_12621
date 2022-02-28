@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mine</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <style>
+    html {background-color : #FFE4C4}
+    img{
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Mine</h1>
+    <a href="check.html">Check Document</a>
+    <br>
+    <a href="document_submit.html">Submit a document</a>
+    <br>
+    <a href="home.html">Home</a>
+    <br>
+    <a href="node_page.html">Node Page</a>
+    <br>
+    <a href="register.html">Register</a>
+    <br>
+    <br>
+    <form action = "http://localhost:5000/mine"  target="_blank" method = "GET">
+      <input type="submit" value="MINE!"
+         name="Submit" id="frm1_submit" />
+    </form>
+    <br>
+    <br>
+    <form action = "http://localhost:5000/nodes/resolve"  target="_blank" method = "GET">
+      <input type="submit" value="RESOLVE NODES!"
+         name="Submit" id="frm2_submit" />
+    </form>
+    <img src="https://dejpknyizje2n.cloudfront.net/marketplace/products/simple-circle-canada-flag-sticker-1540241117.8888876.png" alt="Flag">
+
+  </body>
+</html>
